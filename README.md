@@ -1,7 +1,7 @@
 # TraumaGrid: AI-Powered Golden-Hour Trauma Triage — Even When Networks Fail
 
 > **Tagline**: Edge AI • Contactless Vitals • Ultra-Low-Bandwidth Emergency Telemetry  
-> **Status**: 24-Hour Hackathon Prototype & Runnable Demonstration MVP
+> **Status**: Prototype & Runnable Demonstration MVP
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg)](https://fastapi.tiangolo.com)
