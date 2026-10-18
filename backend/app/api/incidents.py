@@ -5,11 +5,11 @@ from typing import List
 from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 
-from backend.app.database.session import get_db
-from backend.app.models.models import Incident, Detection, TelemetryRecord
-from backend.app.schemas.schemas import IncidentCreate, IncidentResponse, DetectionItem, TelemetryPayload
-from backend.app.utils.telemetry_encoder import encode_telemetry
-from backend.app.websocket.manager import manager
+from app.database.session import get_db
+from app.models.models import Incident, Detection, TelemetryRecord
+from app.schemas.schemas import IncidentCreate, IncidentResponse, DetectionItem, TelemetryPayload
+from app.utils.telemetry_encoder import encode_telemetry
+from app.websocket.manager import manager
 
 router = APIRouter(prefix="/api/incidents", tags=["Incidents"])
 
