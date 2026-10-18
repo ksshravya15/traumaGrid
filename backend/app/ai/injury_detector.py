@@ -5,7 +5,7 @@ from typing import List, Optional, Dict, Any
 import numpy as np
 from PIL import Image
 
-from backend.app.schemas.schemas import DetectionItem, InjuryDetectionResult
+from app.schemas.schemas import DetectionItem, InjuryDetectionResult
 
 MODEL_PATH = os.getenv("INJURY_MODEL_PATH", os.path.join(os.path.dirname(__file__), "../../../models/injury_detector.onnx"))
 
