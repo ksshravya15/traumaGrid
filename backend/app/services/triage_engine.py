@@ -1,6 +1,6 @@
 from typing import List, Optional, Tuple
-from backend.app.schemas.schemas import TriageInput, TriageResult
-from backend.app.services.trauma_score import calculate_start_rts_score
+from app.schemas.schemas import TriageInput, TriageResult
+from app.services.trauma_score import calculate_start_rts_score
 
 
 def evaluate_triage(data: TriageInput) -> TriageResult:
