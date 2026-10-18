@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from backend.app.schemas.schemas import (
+from app.schemas.schemas import (
     InjuryDetectionRequest,
     InjuryDetectionResult,
     RppgInput,
@@ -7,9 +7,9 @@ from backend.app.schemas.schemas import (
     TriageInput,
     TriageResult,
 )
-from backend.app.ai.injury_detector import injury_detector
-from backend.app.ai.rppg import rppg_estimator
-from backend.app.services.triage_engine import evaluate_triage
+from app.ai.injury_detector import injury_detector
+from app.ai.rppg import rppg_estimator
+from app.services.triage_engine import evaluate_triage
 
 router = APIRouter(prefix="/api", tags=["Analysis & Triage"])
 
