@@ -1,6 +1,6 @@
 import json
 from typing import Dict, Any, Tuple
-from backend.app.schemas.schemas import TelemetryPayload, TelemetryResponse
+from app.schemas.schemas import TelemetryPayload, TelemetryResponse
 
 
 def encode_telemetry(payload: TelemetryPayload) -> Tuple[str, int]:
