@@ -4,14 +4,14 @@ from datetime import datetime
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from fastapi.middleware.cors import CORSMiddleware
 
-from backend.app.database.session import engine, Base, SessionLocal
-from backend.app.models.models import Incident, Detection, TelemetryRecord
-from backend.app.api.incidents import router as incidents_router
-from backend.app.api.analysis import router as analysis_router
-from backend.app.api.telemetry import router as telemetry_router
-from backend.app.websocket.manager import manager
-from backend.app.utils.telemetry_encoder import encode_telemetry
-from backend.app.schemas.schemas import TelemetryPayload
+from app.database.session import engine, Base, SessionLocal
+from app.models.models import Incident, Detection, TelemetryRecord
+from app.api.incidents import router as incidents_router
+from app.api.analysis import router as analysis_router
+from app.api.telemetry import router as telemetry_router
+from app.websocket.manager import manager
+from app.utils.telemetry_encoder import encode_telemetry
+from app.schemas.schemas import TelemetryPayload
 
 
 def seed_demo_data():
