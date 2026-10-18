@@ -6,7 +6,7 @@ from typing import List, Optional
 from PIL import Image
 from scipy.signal import butter, filtfilt
 
-from backend.app.schemas.schemas import RppgInput, RppgResult
+from app.schemas.schemas import RppgInput, RppgResult
 
 
 def butter_bandpass(lowcut: float, highcut: float, fs: float, order: int = 2):
