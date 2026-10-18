@@ -3,11 +3,11 @@ from datetime import datetime
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 
-from backend.app.database.session import get_db
-from backend.app.schemas.schemas import TelemetryPayload, TelemetryResponse
-from backend.app.models.models import Incident, TelemetryRecord
-from backend.app.utils.telemetry_encoder import encode_telemetry
-from backend.app.websocket.manager import manager
+from app.database.session import get_db
+from app.schemas.schemas import TelemetryPayload, TelemetryResponse
+from app.models.models import Incident, TelemetryRecord
+from app.utils.telemetry_encoder import encode_telemetry
+from app.websocket.manager import manager
 
 router = APIRouter(prefix="/api", tags=["Telemetry"])
 
